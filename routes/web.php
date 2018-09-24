@@ -14,3 +14,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('about', 'testController@about')->middleware('test:GG');
+
+Route::get('contact', 'testController@contact')->middleware('test:Fat');
